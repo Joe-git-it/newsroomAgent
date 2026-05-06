@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Project-specific
+data/raw/*
+!data/raw/.gitkeep
+data/chroma/
+*.log
+
+# Build artifacts
+dist/
+build/
+*.egg-info/

@@ -36,6 +36,13 @@ def writer(state: GraphState) -> GraphState:
     final_report = llm.invoke(f"Write a brief report on {topic} given these accumalated facts: {facts}").content
     return {"final_report": final_report}
 
+#ROUTER
+def should_coninue(state) -> str:
+    if state["iteration"] >= 3:
+        return "writer"
+    if "sufficient" in state["critique"].lower():
+        return "writer"
+    return "researcher"
 
 
 
@@ -46,21 +53,6 @@ def writer(state: GraphState) -> GraphState:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# ASKING THE USER FOR A QUESTION AND PRINTING ALL THE RESULTS
+# ASKING THE USER FOR A RESEARCH TOPIC
 if __name__ == "__main__":
     result = graph.invoke({"topic": input("What topic would you like to research?")})

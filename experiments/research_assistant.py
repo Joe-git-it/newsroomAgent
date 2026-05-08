@@ -3,6 +3,9 @@ from typing import TypedDict, Annotated
 import operator
 from langgraph.graph import StateGraph, END
 from langchain_anthropic import ChatAnthropic
+#TO LATER BE REPLACED WITH SQL BACKEND
+from langgraph.checkpoint.memory import MemorySaver
+from pprint import pprint
 
 # SETTING UP THE LLM WITH TEMPERATURE 0 SO IT GIVES CONSISTENT ANSWERS
 llm = ChatAnthropic(model="claude-haiku-4-5", temperature=0)
@@ -64,13 +67,22 @@ builder.add_conditional_edges("critic", should_continue)
 builder.add_edge("writer", END)
 
 
+# COMPILING THE GRAPH WITH AN IN MEMORY CHECKPOINTER SO STATE PERSISTS BETWEEN STEPS
+memory = MemorySaver()
+graph = builder.compile(checkpointer=memory)
 
-# COMPILING THE GRAPH SO IT IS READY TO RUN
-graph = builder.compile()
 
-
-# ASKING THE USER FOR A RESEARCH TOPIC
 if __name__ == "__main__":
-    result = graph.invoke({"topic": input("What topic would you like to research? ")})
+     # THREAD ID IDENTIFIES THIS RUN. WILL REUSE IT TO CONTINUE THE SAME STATE THREAD
+    config = {"configurable": {"thread_id": "session-1"}}
+    result = graph.invoke({"topic": input("What topic would you like to research? ")}, config=config)
     print(result["iteration"])
     print(result["final_report"])
+
+    # CURRENT STATE SNAPSHOT FOR THIS THREAD
+    current = graph.get_state(config)
+    print("CURRENT STATE VALUES:", current.values)
+    print("NEXT NODE TO RUN:", current.next)
+    #PRINT HISTORY, NEWEST FIRST
+    for snapshot in graph.get_state_history(config):
+        pprint(snapshot.values)

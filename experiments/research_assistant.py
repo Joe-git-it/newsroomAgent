@@ -1,14 +1,17 @@
-# IMPORTING WHAT WE NEED TO BUILD THE GRAPH AND CALL THE LLM
 from typing import TypedDict, Annotated
 import operator
 from langgraph.graph import StateGraph, END
-from langchain_anthropic import ChatAnthropic
+# from langchain_anthropic import ChatAnthropic
 #TO LATER BE REPLACED WITH SQL BACKEND
 from langgraph.checkpoint.memory import MemorySaver
 from pprint import pprint
+from langchain_ollama import ChatOllama, OllamaEmbeddings
 
 # SETTING UP THE LLM WITH TEMPERATURE 0 SO IT GIVES CONSISTENT ANSWERS
-llm = ChatAnthropic(model="claude-haiku-4-5", temperature=0)
+# llm = ChatAnthropic(model="claude-haiku-4-5", temperature=0)
+llm = ChatOllama(model="llama3.2:3b", temperature=0)
+
+e = OllamaEmbeddings(model="nomic-embed-text")
 
 
 # DEFINING THE STATE OBJECT THAT ALL NODES SHARE AND PASS BETWEEN EACH OTHER

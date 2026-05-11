@@ -1,0 +1,52 @@
+In early May 2026, Canvas LMS, a learning management system operated by private company Instructure, was affected by a data breach and outage. Instructure disclosed that it was investigating a cybersecurity incident involving certain user data, including names, email addresses, student ID numbers, and messages among users. The company said it had found no evidence that passwords, dates of birth, government identifiers, or financial information were involved in the hacking.
+Despite Instructure's claim that the situation had been resolved, on May 7, Canvas was hacked again; its login page was replaced with a ransomware message by ShinyHunters, the criminal hacking group which claimed responsibility. ShinyHunters threatened to release Canvas's sensitive data unless its ransom was paid by the end of May 12. As of May 8, however, Instructure reported on their status page no incidents related to the May 7–8 hack, and claimed that access to their website had been restored to most users. 
+The hack is considered the largest educational security breach on record as of May 8, 2026 due to its unprecedented global scale, affecting 8,809 universities, educational ministries, and other institutions worldwide. The breach had particularly significant implications in the United States, where Canvas is used by 41% of higher education institutions as well as some K-12 schools. The hacking group ShinyHunters claimed to have stolen 3.65 terabytes of data (approximately 275 million records), including private messages exchanged between students and teachers.
+The incident came to wider public attention on May 7 at approximately 1:20 p.m. PDT (UTC-7) when students began posting on Reddit screenshots of the defaced Canvas log-in page.
+
+
+== Background ==
+
+Canvas is a commercial learning management system offered by Utah-based company Instructure.  The software assists with managing coursework, assignments, quizzes, exams, and grades, as well as facilitating communication between instructors and students. 
+In 2026, Instructure provided Canvas to approximately 30 million active participants at over 8,000 educational institutions in the United States, United Kingdom, Canada, Australia, New Zealand and some European nations. The platform is the most widely adopted learning management system in North American higher education where 41% of institutions use the software.
+
+
+== Breach and outage ==
+On May 1, Instructure announced on their status page that a cyber security incident had occurred. On May 2, Instructure announced they had contained the issue, but names, email addresses, ID numbers, and messages had been stolen for ransom. ShinyHunters posted a ransom note claiming responsibility for the attack on May 3. On May 6, Instructure stated that their Canvas system was back to normal operation and they had found no evidence that passwords, dates of birth, government identifiers, or financial information were involved.
+On May 7, ShinyHunters wrote that Instructure had tried to implement security patches rather than negotiate with the hackers. This prompted the group to cause an outage where their new ransom note was displayed to every user. At 8 pm Eastern time, Instructure replaced the ransom note message with an alert stating their software was down for maintenance. The outage occurred during the end of the academic year for many institutions, including during final exam periods at some colleges and universities. Attempted log-ins simply yielded the following message (partial transcript):  
+
+SHINYHUNTERS rooting your systems since '19 ;) ShinyHunters has breached Instructure (again). Instead of contacting us to resolve it they ignored us and did some "security patches". 
+
+⚠ WARNING If any of the schools in the affected list are interested in preventing the release of their data, please consult with a cyber advisory firm and contact us privately to negotiate a settlement. You have till the end of the day by 12 May 2026 before everything is leaked.
+
+Instructure still has until EOD 12 May 2026 to contact us. 
+
+More often, however, a screen was shown saying that Canvas was down for regular maintenance. ShinyHunters claimed that nearly 9,000 schools worldwide were affected, though the full scope of the breach has not been independently verified as of May 9, 2026.
+Canvas resumed operations several hours after investigating the unauthorised access, later confirming that the exploit was caused by an issue related to its Free-For-Teacher accounts. Some institutions waited to verify the security of their systems before activating Canvas on the afternoon of May 8. Instructure has yet to state whether it paid a ransom or issue an update regarding the compromised data.
+
+
+== Impact ==
+Educational institutions in the United States, Canada, United Kingdom, New Zealand, Australia, Sweden, the Netherlands, and Singapore reported disruption, outage, and potential exposure of user information. Outages were caused by Canvas being taken offline by Instructure and then by institutions disconnecting from Canvas. The length of these outages varied by educational institution, ranging from one day to several days, with access to Canvas in some institutions still not restored after four days.  
+The initial impact differed by educational  institution. For example, the University of California system said its Canvas login pages had displayed a suspicious message from the threat actor and they instructed UC locations to temporarily block or redirect Canvas access "out of an abundance of caution". ABC15 reported that finals were disrupted at Arizona State University, with end-of-school activities and celebrations temporarily halted and ASU themselves saying, "ASU is aware of an incident that has affected Canvas, the online platform students and faculty use to access courses and submit work, that has resulted today in users being redirected and rendering the platform inaccessible at this time. This incident is unrelated to any ASU-managed system."
+CBS Sacramento reported that Sacramento State students attempting to log into Canvas were redirected to a page displaying a message attributed to ShinyHunters, which claimed that student and faculty data had been obtained, and threatened to leak it unless a ransom was paid. ABC-owned local stations also reported impacts or monitoring by institutions including the University of Pennsylvania, Wake County Public Schools, and Duke University.
+In Australia, ABC News reported that universities, vocational providers, and some state schools were affected, and that the federal government's National Office of Cyber Security was coordinating a response. Several universities, including the University of Melbourne, University of Technology Sydney, Royal Melbourne Institute of Technology, Griffith University, Adelaide University, and University of Canberra are offering extensions on assignments to affected students. University of Technology Sydney, Royal Melbourne Institute of Technology, Adelaide University, and the Queensland Department of Education have temporarily disabled access to Canvas systems as a preventative measure until the situation is resolved and are warning staff and students of potential phishing or scam emails. Queensland Minister of Education John-Paul Langbroek said the attack could have impacted the data of 200 million people. Queensland Teachers' Union called for investigation for what caused the breach and how similar attacks could be thwarted. Both Instructure and several Australian officials commenced investigations.
+In Canada, at least eight universities and colleges have been affected and some schools have stopped access to Canvas.
+In the Netherlands, 44 educational institutions have been affected.  Several universities disconnected Canvas from their internal systems.
+In Hong Kong, five institutions, including three universities, were affected. At the Hong Kong Polytechnic University, 42,000 students and staff were affected by the breach.
+In New Zealand, the University of Auckland, Auckland University of Technology, and Victoria University of Wellington were affected.
+
+
+=== Migration from Canvas ===
+The University of British Columbia started moving staff and courses to Canvas's open source competitor Moodle as a tool for teaching, as well as the closed source competitor SharePoint for the Canvas Materials.
+
+
+== See also ==
+Cyberattack
+
+
+== References ==
+
+
+== External links ==
+Security incident update & FAQs (Instructure)
+Canvas status (Instructure)
+Full list of the purportedly hacked (Web Archive)

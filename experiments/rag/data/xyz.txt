@@ -1,0 +1,16 @@
+.xyz is a top-level domain name. It was proposed in ICANN's New generic top-level domain (gTLD) Program, and became available to the general public on June 2, 2014. The domain name came about because the three letters are the last in the Latin-script alphabet. XYZ.com and CentralNic are the registries for the domain.
+
+
+== Adoption ==
+In November 2015, .xyz reached 1.5 million domain name registrations, possibly boosted in part by Google's decision to use abc.xyz for its corporate (Alphabet Inc.) website, one of the first major corporations to use the domain. However, domain name registry VeriSign and others have claimed that domain name registrar Network Solutions gave away possibly hundreds of thousands of these names by placing them into customer accounts on an opt-out basis.
+
+
+== 1.111B class ==
+On June 1, 2017, .XYZ launched the 1.111B class .xyz domains which are cheap domains priced at US$0.99 per year and renewed at the same price. They are 6-digit, 7-digit, 8-digit, and 9-digit numeric combinations between 000000.xyz – 999999999.xyz. Daniel Negari, CEO of .XYZ said that it is for bringing competition, choice, and innovation to the market.
+
+
+== Issues ==
+In 2023, the Anti-Phishing Working Group stated that the .xyz, and .shop domain names were in the top 5 for malicious domain registrations. Due to these instances of malware, scams, and phishing, multiple anti-malware vendors are blacklisting many or all .xyz domains.
+
+
+== References ==

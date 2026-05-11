@@ -20,6 +20,9 @@ __pycache__/
 data/raw/*
 !data/raw/.gitkeep
 data/chroma/
+
+# Ignore RAG article scraper
+experiments/rag/fetch_articles.py
 *.log
 
 # Build artifacts

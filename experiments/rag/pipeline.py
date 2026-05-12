@@ -30,6 +30,9 @@ def chunk_documents(docs: list, chunk_size: int, chunk_overlap: int) -> list:
       #RETURNS DOCUMENT OBJECTS. KEEPS METADATA
       return splitter.split_documents(docs)
 
+def get_embedder() -> OllamaEmbeddings:
+      return OllamaEmbeddings(model="nomic-embed-text")
+
 
 if __name__ == "__main__":
     docs = load_documents()
@@ -39,6 +42,11 @@ if __name__ == "__main__":
 
     chunks = chunk_documents(docs, chunk_size=800, chunk_overlap=100)
     print(f"SPLIT INTO {len(chunks)} CHUNKS")
-    print(f"FIRST CHUNK SOURCE: {chunks[0].metadata['source']}")
-    print(f"FIRST CHUNK ({len(chunks[0].page_content)} CHARS):")
-    print(chunks[0].page_content)
+    # print(f"FIRST CHUNK SOURCE: {chunks[0].metadata['source']}")
+    # print(f"FIRST CHUNK ({len(chunks[0].page_content)} CHARS):")
+    # print(chunks[0].page_content)
+
+    embedder = get_embedder()
+    v1 = embedder.embed_query("What city is hosting the 2026 Fifa World Cup?")
+    print(f"VECTOR LENGTH: {len(v1)}")
+    print(f"VECTOR PREVIEW (FIRST 5 DIMENSIONS): {v1[:5]}")

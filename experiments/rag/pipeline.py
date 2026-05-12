@@ -4,9 +4,9 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_ollama import OllamaEmbeddings
 from langchain_anthropic import ChatAnthropic
 from langchain_chroma import Chroma
+import shutil
 
 DATA_DIR = Path(__file__).parent / "data"
-PERSIST_DIR = Path(__file__).parent / "chroma_db"
 
 
 def load_documents() -> list:
@@ -19,34 +19,43 @@ def load_documents() -> list:
     return docs
 
 def chunk_documents(docs: list, chunk_size: int, chunk_overlap: int) -> list:
-      splitter = RecursiveCharacterTextSplitter(
-        #SMALLER CHUNKS, FINER-GRAINED RETRIEVAL, TIGHTER CONTEXT, CHEAPER PROMPTS AND LESS OFF-TOPIC NOISE
-        chunk_size=chunk_size,
-        #NBR OF REPEATED CHARS BETWEEN CHUNKS
-        chunk_overlap=chunk_overlap,
-        #PREFER PARAGRAPH BREAKS, THEN LINE BREAKS, THEN WORD BREAKS, THEN CHARACTER BREAKS
-        separators=["\n\n", "\n", ". ", " ", ""],
-      )
-      #RETURNS DOCUMENT OBJECTS. KEEPS METADATA
-      return splitter.split_documents(docs)
+    splitter = RecursiveCharacterTextSplitter(
+    #SMALLER CHUNKS, FINER-GRAINED RETRIEVAL, TIGHTER CONTEXT, CHEAPER PROMPTS AND LESS OFF-TOPIC NOISE
+    chunk_size=chunk_size,
+    #NBR OF REPEATED CHARS BETWEEN CHUNKS
+    chunk_overlap=chunk_overlap,
+    #PREFER PARAGRAPH BREAKS, THEN LINE BREAKS, THEN WORD BREAKS, THEN CHARACTER BREAKS
+    separators=["\n\n", "\n", ". ", " ", ""],
+    )
+    #RETURNS DOCUMENT OBJECTS. KEEPS METADATA
+    return splitter.split_documents(docs)
 
 def get_embedder() -> OllamaEmbeddings:
-      return OllamaEmbeddings(model="nomic-embed-text")
+    return OllamaEmbeddings(model="nomic-embed-text")
 
+# EMBEDS EACH CHUNK AND SAVES THE VECTOR STORE TO DISK. 
+def build_vectorstore(chunks: list, persist_dir: Path) -> Chroma:
+    return Chroma.from_documents(
+        documents=chunks,
+        embedding=get_embedder(),
+        persist_directory=str(persist_dir),
+    )
+
+# SEPERATE DIR BY CHUNK SIZE. EMBED EACH ONCE, THEN QUERY WITHOUT REBUILIDNG
+def persist_dir_for(chunk_size: int) -> Path:
+    return Path(__file__).parent / f"chroma_db_{chunk_size}"
+
+# TO BE RAN ONCE PER CHUNK SIZE FROM CMD LINE. RERUN WHEN SOURCE DATA OR OVERLAP CHANGES
+def ingest(chunk_size: int, chunk_overlap: int = 100):
+    persist = persist_dir_for(chunk_size)
+    if persist.exists():
+        shutil.rmtree(persist)  # WIPE BEFORE REBUILD. AVOID ADDITIVE DUPLICATES
+    docs = load_documents()
+    chunks = chunk_documents(docs, chunk_size=chunk_size, chunk_overlap=chunk_overlap)
+    print(f"EMBEDDING {len(chunks)} CHUNKS INTO {persist.name}")
+    build_vectorstore(chunks, persist)
+    print("DONE")
 
 if __name__ == "__main__":
-    docs = load_documents()
-    print(f"LOADED {len(docs)} DOCS")
-    # print(f"FIRST DOC: {docs[0].metadata['source']}")
-    # print(f"FIRST 200 CHARS:\n{docs[0].page_content[:200]}")
+    ingest(chunk_size=800)
 
-    chunks = chunk_documents(docs, chunk_size=800, chunk_overlap=100)
-    print(f"SPLIT INTO {len(chunks)} CHUNKS")
-    # print(f"FIRST CHUNK SOURCE: {chunks[0].metadata['source']}")
-    # print(f"FIRST CHUNK ({len(chunks[0].page_content)} CHARS):")
-    # print(chunks[0].page_content)
-
-    embedder = get_embedder()
-    v1 = embedder.embed_query("What city is hosting the 2026 Fifa World Cup?")
-    print(f"VECTOR LENGTH: {len(v1)}")
-    print(f"VECTOR PREVIEW (FIRST 5 DIMENSIONS): {v1[:5]}")

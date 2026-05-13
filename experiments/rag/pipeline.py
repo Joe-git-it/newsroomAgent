@@ -56,6 +56,28 @@ def ingest(chunk_size: int, chunk_overlap: int = 100):
     build_vectorstore(chunks, persist)
     print("DONE")
 
+# OPEN PERSISTED CHROMA DIR WITHOUT REBUILDING IT. ERROR IF NOT FOUND
+def get_vectorstore(chunk_size: int) -> Chroma:
+    persist = persist_dir_for(chunk_size)
+    if not persist.exists():
+        raise SystemExit(
+            f"NO STORE AT {persist.name}. RUN: python pipeline.py ingest --chunk-size {chunk_size}"
+        )
+    return Chroma(persist_directory=str(persist), embedding_function=get_embedder())
+
+# HELPER TO TURN CHUBKS INTO LARGE CONTEXT STRING SO LLM KNOWS WHERE EACH CHUNK CAME FROM
+def format_context(chunks: list) -> str:
+      parts = []
+      for chunk in chunks:
+          source = chunk.metadata.get("source", "unknown")
+          parts.append(f"[{source}]\n{chunk.page_content}")
+      return "\n\n---\n\n".join(parts)
+
+
 if __name__ == "__main__":
-    ingest(chunk_size=800)
+    store = get_vectorstore(800)
+    # WILL USE SIMILARITY SEARCH WITH K=3
+    retriever = store.as_retriever(search_kwargs={"k": 3})
+    chunks = retriever.invoke("Who won the 2026 Kerala election?")
+    print(format_context(chunks))
 

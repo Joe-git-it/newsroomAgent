@@ -75,7 +75,7 @@ def get_vectorstore(chunk_size: int) -> Chroma:
         )
     return Chroma(persist_directory=str(persist), embedding_function=get_embedder())
 
-# HELPER TO TURN CHUBKS INTO LARGE CONTEXT STRING SO LLM KNOWS WHERE EACH CHUNK CAME FROM
+# HELPER TO TURN CHUNKS INTO LARGE CONTEXT STRING SO LLM KNOWS WHERE EACH CHUNK CAME FROM
 def format_context(chunks: list) -> str:
       parts = []
       for chunk in chunks:

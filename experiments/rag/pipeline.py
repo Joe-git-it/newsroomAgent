@@ -8,6 +8,16 @@ import shutil
 
 DATA_DIR = Path(__file__).parent / "data"
 
+PROMPT_TEMPLATE = """You are answering questions about recent world events using the provided context.                            
+  Use ONLY the context below. If the answer is not present, say so plainly.                                                           Cite the sources (filenames) you used at the end of your answer.
+
+  Context:
+  {context}
+
+  Question: {question}
+
+  Answer:"""
+
 
 def load_documents() -> list:
     docs = []
@@ -73,11 +83,21 @@ def format_context(chunks: list) -> str:
           parts.append(f"[{source}]\n{chunk.page_content}")
       return "\n\n---\n\n".join(parts)
 
+def query(chunk_size: int, k: int, question: str) -> None:
+      store = get_vectorstore(chunk_size)
+      retriever = store.as_retriever(search_kwargs={"k": k})
+      llm = ChatAnthropic(model="claude-sonnet-4-6", temperature=0)
+
+      chunks = retriever.invoke(question)
+      print(f"RETRIEVED {len(chunks)} CHUNKS FROM:")
+      for c in chunks:
+          print(f"  - {c.metadata.get('source')}")
+
+      prompt = PROMPT_TEMPLATE.format(context=format_context(chunks), question=question)
+      response = llm.invoke(prompt).content
+      print(f"\nANSWER:\n{response}\n")
+
 
 if __name__ == "__main__":
-    store = get_vectorstore(800)
-    # WILL USE SIMILARITY SEARCH WITH K=3
-    retriever = store.as_retriever(search_kwargs={"k": 3})
-    chunks = retriever.invoke("Who won the 2026 Kerala election?")
-    print(format_context(chunks))
+    query(chunk_size=800, k=5, question="What is the Andes virus and how is it transmitted?")
 

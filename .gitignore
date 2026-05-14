@@ -17,7 +17,6 @@ __pycache__/
 .DS_Store
 
 # Project-specific
-data/raw/*
 !data/raw/.gitkeep
 data/chroma/
 

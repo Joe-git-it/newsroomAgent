@@ -1,0 +1,17 @@
+An ant mill is an observed phenomenon in which a group of army ants, separated from the main foraging party, lose the pheromone track and begin to follow one another, forming a continuously rotating circle. This circle is commonly known as a “death spiral” because the ants might eventually die of exhaustion. It has been reproduced in laboratories and in ant colony simulations. 
+The phenomenon is a side effect of the self-organizing structure of ant colonies. Each ant merely follows the ant in front of it, which functions until a slight deviation begins to occur, typically by an environmental trigger, and an ant mill forms. An ant mill was first described in 1921 by William Beebe, who observed a mill 370 meters (1,210 ft) in circumference. It took each ant two and a half hours to make one revolution. Similar phenomena have been noted in processionary caterpillars and fish.
+
+
+== See also ==
+Feedback loop – Process where information about current status is used to influence future statusPages displaying short descriptions of redirect targets
+Information cascade – Behavioral phenomenon
+Stigmergy – Social network mechanism of indirect coordination
+The blind leading the blind – Idiom and metaphor in the form of a parallel phrase
+Woozle effect – False credibility due to quantity of citations
+
+
+== References ==
+
+
+== External links ==
+YouTube video of an ant mill

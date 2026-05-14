@@ -1,0 +1,43 @@
+Aldonic acids are sugar acids with the general chemical formula, HO2C(CHOH)nCH2OH. They are obtained by oxidizing the aldehyde (-CHO group) of an aldose to form a carboxylic acid (-COOH group).  Aldonic acids are generally found in their ring form. However, these rings do not have a chiral carbon at the terminal end bearing the aldehyde, and they cannot form R−O−R′ linkages between different molecules.
+The nomenclature of aldonic acids and their lactones is based on replacing the suffix "-ose" with "onic acid" or "onolactone". Hence, D-glucose is oxidized to D-gluconic acid and D-gluconolactone.
+
+
+== Inventory ==
+Sugar acids are white, water-soluble solids.  They tend to dehydrate to the lactone derivative, often before they can be melted.  All are chiral and, at least in nature, enantiopure.
+
+
+== Synthesis ==
+
+
+=== Oxidation by bromine and water ===
+Aldonic acids are most commonly prepared by the oxidation of the sugar with bromine and water under neutral pH.
+
+
+=== Strecker reaction ===
+Alternatively, they arise by homologation of an aldose using the Strecker reaction. Cyanide in ammonia reacts with an aldose to produce an intermediate, which is then reacted with a hydronium ion to form an aldonic acid.
+
+
+=== Oxidation by Benedict's and Fehling's reagents ===
+Aldonic acids are the products of the oxidation of aldoses by Benedict's or Fehling's reagents. Copper ions react with an aldose to form a red precipitate, Cu2O.  
+
+
+=== Natural synthesis ===
+Anaerobic bacteria can also perform dehydrogenation to produce aldonic acids. This is done by synthesizing enzymes that are able to selectively oxidize aldoses to their corresponding aldonic acid.
+
+
+== Applications ==
+In commercial settings, glucose, galactose, or arabinose are commonly oxidized to obtain aldonic acids. These products can then be used as the building blocks for preservatives, buffering agents, and other chemicals. As such, the use of aldonic acids for chemical applications is of growing interest to various industries.
+Aldonic acids can be used as the natural starting materials to synthetic products including polyesters and polyurethane. The incorporation of these organic sugars into synthetic materials allow for a more renewable alternative to oil-based polymer synthesis, and increased structural durability within polymer chains.
+
+
+== Properties ==
+Aldonic acids are typically used in industrial applications for their ability to degrade naturally in the environment. This can be attributed to their affinity with water, as the polar bonds within the carboxylic acid group of aldonic acids allow them to interact with aquatic systems.
+The structural diversity of aldonic acids also allow for various properties. Their ring formation creates an added layer of rigidity when integrated with other materials.
+
+
+== See also ==
+Aldaric acids
+Uronic acids
+
+
+== References ==

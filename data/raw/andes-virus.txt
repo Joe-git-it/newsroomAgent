@@ -1,0 +1,124 @@
+Andes virus (ANDV) is a cause of hantavirus pulmonary syndrome (HPS) in Chile and Argentina. It is spread mainly by the long-tailed pygmy rice rat (Oligoryzomys longicaudatus). In its natural reservoir, ANDV causes an asymptomatic, persistent infection and is spread through excretions, fighting, and grooming. Humans can become infected by breathing in aerosols that contain rodent saliva, urine, or feces, as well as through bites and scratches. In humans, infection can lead to HPS, an illness characterized by an early phase of mild and moderate symptoms such as fever, headache, and fatigue, followed by sudden respiratory failure. The case fatality rate is about 40%.
+The genome of ANDV is about 12.1 kilobases (kb) in length and segmented into three negative-sense, single-stranded RNA (−ssRNA) strands. The small strand encodes the viral nucleoprotein, the medium strand encodes the viral spike protein, which attaches to cell receptors for entry into cells, and the long strand encodes the viral RNA-dependent RNA polymerase (RdRp), which replicates and transcribes the genome. Genome segments are encased in nucleoproteins to form ribonucleoprotein (RNP) complexes that are surrounded by a viral envelope that contains spikes emanating from its surface.
+Andes virus replicates first by binding to the surface of cells with its envelope spikes. Virus particles, called virions, are then taken into the cell by endosomes, where a drop in pH causes the viral envelope to fuse with the endosome, which releases viral RNA into the host cell. RdRp then transcribes the genome for translation by host cell ribosomes and produces copies of the genome for progeny viruses. New virions are assembled near the cell membrane, where virions bud from the cell membrane and use it to obtain their viral envelope and leave the cell.
+Andes virus was first identified in 1995 in Argentina and Chile, with a few hundred cases diagnosed before the current outbreak . The primary reservoir is the long-tailed pygmy rice rat, though the virus is also found in other species such as the long-haired grass mouse (Abrothrix longipilis). Andes virus is the only hantavirus known to spread between people, a route first identified in 1996. This transmission as of 2026 is strongly supported by the evidence.
+
+
+== Genome ==
+The genome of ANDV is about 12.1 thousand nucleotides in length and segmented into three negative-sense, single-stranded RNA (-ssRNA) segments. The segments form into circles via non-covalent bonding of the ends of the genome. The small segment, about 1.87 kilobases (kb) in length, encodes the viral nucleoprotein and a non-structural protein that inhibits interferon production. The medium segment, about 3.67 kb in length, encodes a glycoprotein precursor that is cleaved into the two spike proteins Gn and Gc during virion assembly. The large segment, about 6.56 kb in length, encodes an RNA-dependent RNA polymerase (RdRp), which is responsible for transcribing and replicating the genome. The ends of each segment contain untranslated terminal regions (UTRs) that are involved in the replication and transcription of the genome.
+
+
+== Structure ==
+Virions are mostly spherical or pleomorphic in shape and range from 80 to 160 nm in diameter. They contain a lipid envelope covered in spike proteins made of the two viral glycoproteins, Gn and Gc. The spike proteins extend about 10 nm out from the surface and are tetrameric, consisting of four copies each of Gn and Gc with helical symmetry, in which Gn forms the stalk of the spike and Gc the head. Spikes are arranged on the surface in a lattice pattern. Inside the envelope are the three genome segments, which are encased in nucleoproteins to form a ribonucleoprotein (RNP) complex. Attached to each RNP complex is a copy of RdRp.
+
+
+== Life cycle ==
+Andes virus primarily infects endothelial cells and macrophages. It enters cells by using β3-integrins as receptors. Virions are taken into a cell via an endosome. Once pH is lowered, the viral envelope fuses with the endosome, which releases viral RNA into the host cell's cytoplasm. The small segment is transcribed by RdRp first, then the medium segment, and lastly the large segment. Once the genome has been transcribed, RdRp snatches caps from host messenger RNA (mRNA) to create viral mRNA that is primed for translation by host ribosomes to produce viral proteins.
+For replication of the genome, a complementary positive-sense strand is produced by RdRp. Copies of the genome are made from this complementery strand. Progeny RNA strands are then encapsidated by nucleoproteins. During replication, the glycoprotein is cleaved in the endoplasmic reticulum by the host signal peptidase during translation. This produces Gn at the N-terminus and Gc at the C-terminus of the protein. Spike proteins are expressed on the surface of the cell membrane. Viral RNPs are transmitted to the cell membrane where they bud from the surface, thereby obtaining their envelope as the new progeny virions leave the cell.
+
+
+== Evolution ==
+The most common way that hantaviruses evolve is through mutations of individual nucleotides being inserted, deleted, or substituted. Because ANDV has a segmented genome, it is possible for recombination and reassortment of segments to occur, whereby segments from different lineages mix in a single host cell and produce hybrid progeny.
+
+
+== Ecology ==
+
+Andes virus is carried mainly by the long-tailed pygmy rice rat (Oligoryzomys longicaudatus), a common species in rural Argentina and Chile. Apart from the long-tailed pygmy rice rat, ANDV is relatively common in the long-haired grass mouse. Seroprevalence of ANDV in its hosts is found throughout South America, but is highest in Patagonia. Transmission of ANDV between rodents appears to be primarily through saliva and aerosols that contain saliva. In its rodent hosts, it causes a persistent, asymptomatic infection. Transmission to humans occurs mainly through the inhalation of aerosols that contain mouse salivas, urine, or feces. Inhaling those aerosols requires the disease to become airborne. This mostly occurs when rodent discharge is disturbed (e.g., vacuums, sweeping). Transmission can also occur through consumption of contaminated food, bites, and scratches.
+Andes virus is the only hantavirus known to be transmitted from person to person. Human-to-human transmission was first identified during a 1996 outbreak in southern Argentina, and sustained generational transmission was subsequently documented during the 2018–2019 Epuyén outbreak. The virus transmits through direct physical contact, saliva, airborne droplets, breastmilk, from mother to child across the placenta, and through the digestive tract. This transmission primarily occurs among family members or during prolonged close contact with an infected individual in the prodromal phase of the disease.
+Blooming of Chusquea plants has been hypothesized to be a predictive factor in the spread of Andes virus as it has been linked to rodent activity.
+
+
+== Disease ==
+Andes virus infection usually causes hantavirus pulmonary syndrome (HPS), also called hantavirus cardiopulmonary syndrome (HCPS). Symptoms occur within 1–8 weeks after exposure to the virus and come in three phases: prodromal, cardiopulmonary, and recovery. Prodromal (early) symptoms last for a few days and include fever, muscle pain, headache, coughing, nausea, vomiting, chills, and dizziness. The cardiopulmonary phase lasts for several days and is characterized by fluid buildup in the lungs, low oxygen levels in the blood, elevated or irregular heart rate, low blood pressure, cardiogenic shock, and respiratory failure. The case fatality rate from ANDV infection is about 40%.
+Andes virus typically causes disease in Argentina and Chile. In Chile the first HPS case was detected in 1995 and the first known outbreak was noted in 1997 in Coyhaique. Revision of older cases show that the first known case may actually have occurred in 1993. In Argentina, 1,350 cases of HPS have occurred up to 2016 (from various hantaviruses). It is estimated that about 16% of these cases were due to ANDV. At least another 34 cases of ANDV occurred in late 2018 and early 2019 in Argentina.
+Andes virus infection is diagnosed based on symptoms and testing for hantavirus nucleic acid, proteins, or hantavirus-specific antibodies. Treatment is supportive in nature and includes supplementing oxygen during the cardiopulmonary phase. No vaccine exists, so the main way to prevent infection is to avoid or minimize contact with rodents. Repeated infections of hantaviruses have not been observed, so recovering from infection may grant immunity.
+
+
+== Classification ==
+Andes virus is classified into the species Orthohantavirus andesense in the genus Orthohantavirus, which is in the family Hantaviridae, the family that all hantaviruses belong to. Other member viruses of Orthohantavirus andesense include the Castelo dos Sonhos virus, Lechiguanas virus, and Orán virus. The Chile-9717869 isolate of ANDV is the exemplar virus of the species. This taxonomy is shown hereafter:
+
+Family: Hantaviridae
+Genus: Orthohantavirus
+Species: Orthohantavirus andesense
+Andes virus
+Castelo dos Sonhos virus
+Lechiguanas virus
+Orán virus
+
+
+== Treatment and drug development ==
+
+
+=== Treatment and managment ===
+
+
+==== Disinfection ====
+Diluted solution of quaternary ammonium compounds, iodine, hypochlorite are highlighted as effective disinfectants to prevent the spreading the virus from infected surfaces to humans. Unlike the traditionally used hypochlorite (bleach), and iodine, the diluted hydrogen peroxide (<3%) is a non-toxic and less corrosive antimicrobial agent. In addition, a diluted aqueous solution of hydrogen peroxide can be produced in areas with restricted to meet local needs for virus prevention.
+
+
+== History ==
+
+
+=== Discovery ===
+Andes virus was first discovered in Argentina in 1995, and is named after the Andes mountain range. Cases were first reported in Chile that same year. Human-to-human transmission was first reported in an outbreak in 1996 in El Bolsón, Argentina. Since then, sporadic outbreaks with reported person-to-person transmission have occurred. Andes virus was accepted as a species by the International Committee on Taxonomy of Viruses in 1999 and has undergone a series of changes to its species name, first changing to Andes hantavirus, then Andes orthohantavirus, and most recently to the current Orthohantavirus andesense. In 2026, Andes virus was responsible for an outbreak aboard the MV Hondius while the ship was island-hopping in the Atlantic Ocean.
+
+
+=== 2026 cruise ===
+
+
+==== Sequencing ====
+Andes virus has been confirmed through sequencing, in a few cases (regarding the ship's passengers). On 11 May 2026, the website of ECDC said that "Recent genetic sequencing ... strongly suggests that [... some] samples are linked to the same original source of infection"; furthermore, that research shows that the Andes virus involved, "is not a new variant".
+
+Earlier (6 May 2026), the ship's MD, a Dutch man, was found to have Andes virus.
+On 5 May, a Swiss man received a positive test in regard to the Andes virus. He had left the ship earlier, on April 22.
+"Andes [... virus] was confirmed through sequencing", in the case of a British man that had been on the ship, according to a media outlet; furthermore, (minutes or days earlier, on 2 May 2026), "Hantavirus was confirmed".
+A German woman died on the ship on 2 May; a post-mortem test was taken; Andes virus were confirmed.
+
+
+==== Aftermath ====
+The last ship passengers were removed on 10—11 May 2026. They were escorted by armed police officers and safety personnel, from sea to waiting airplanes at a Canary Island airport. Upon landing in other countries, many of those passengers (if not all) had their quarantine conditions continued, according to the procedures of the respective countries.
+As of 8 May, "Tierra del Fuego [a province in Argentina,] has never recorded a case of ... hantavirus — let alone the Andes [... virus] unlike ... provinces further north", according to a media outlet's paraphrase of the province’s director of epidemiology.
+The outbreak has not ended as of the second week of May 2026.
+There has been no sign on the ship of a rat, mouse, or droppings from such.
+
+
+== Phylogenetics ==
+Clades include 
+
+ANDV South (ANDV Sout), and
+ANDV (C-I)
+Lineages that have been proposed, include
+
+ANDV Cent BsAs, or "Central Buenos Aires" lineage
+ANDV Cent Plata, or "Central Plata" lineage
+ANDV Cent Lec; A media outlet said in 2023, that proposed  lineages include "Central Lechiguanas, North, and South".
+
+
+=== Strains ===
+Several strains of Andes virus have been discovered, including
+
+"Hu-3337"; there is also a sequence that refers exclusively to one infected individual: ANDV/Switzerland/Hu-3337/2026, an isolate from a person who died in Switzerland during the 2026 Hondius outbreak.
+the ARG-Epuyén strain
+Andes/ARG
+CH-7913
+CH-9717869 or Chile-9717869
+Chile R123
+AH-1
+CHI-Hu13724
+
+
+== See also ==
+Scrub typhus, a disease  reported in southernmost Chile as early as 2020
+Hantavirus pulmonary syndrome
+Sin Nombre virus (the other common hantavirus species)
+MV Hondius hantavirus outbreak
+
+
+== References ==
+
+
+== External links ==
+
+CDC's Hantavirus Technical Information Index page
+Viralzone: Orthohantavirus
+Andes hantavirus outbreak: ECDC continues working on the frontline to support EU Member States. 2026-05-11. ECDC

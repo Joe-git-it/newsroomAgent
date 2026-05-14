@@ -1,0 +1,123 @@
+Anna's Archive is an open source search engine for shadow libraries that was launched by the pseudonymous Anna shortly after law enforcement efforts to shut down Z-Library in 2022. The site aggregates records from Z-Library, Sci-Hub, and Library Genesis (LibGen), among other sources. It calls itself "the largest truly open library in human history", and has said it aims to "catalog all the books in existence" and "track humanity's progress toward making all these books easily available in digital form". It claims not to be liable for downloads of copyrighted works since it does not directly host any files, instead linking to third-party downloads. It has nonetheless been targeted for engaging in large-scale copyright infringement, facing government blocks and legal action from rightsholders and publishing trade associations.
+
+
+== History ==
+Anna's Archive emerged from the Pirate Library Mirror (PiLiMi) project, an anonymous effort to mirror shadow libraries that completed a full copy of Z-Library in September 2022. PiLiMi acknowledged that it "deliberately violated the copyright law in most countries". The project's initial focus was on preservation rather than on making its data searchable. Days after US law enforcement seized several Z-Library domains and arrested its alleged operators in November 2022, PiLiMi member Anna (also known as Anna Archivist) launched Anna's Archive, which initially displayed results from Z-Library and LibGen.
+
+
+== Website and operations ==
+Anna's Archive has been variously described as a search engine, a metasearch engine, and a shadow library itself. It operates several mirror sites under different top-level domains, currently .gl, .pk, and .gd. Its source code is dedicated to the public domain under the CC0 license. The site does not itself host any files (which it claims makes it nonliable for downloads of copyrighted works), but it indexes metadata and links to "third-party" downloads. It also offers downloads through the IPFS protocol.
+The site's "source libraries" include LibGen, Sci-Hub, Z-Library, the Internet Archive, DuXiu, MagzDB, Nexus/STC, and HathiTrust; Open Library, WorldCat, and Google Books are listed as metadata-only sources. Some of these datasets are already publicly accessible, while others are scraped or otherwise privately acquired for distribution. They are then released in bulk with torrent files so as to make them resilient to website takedowns. As of May 2026, Anna's Archive includes 64,416,225 books and 95,689,473 papers, and its unified list of torrents totals roughly 1.1 petabytes in size.
+A 2025 study comparing the coverage of conventional library databases to various alternatives (including scholarly search engines, other web-based databases, academic social networks, and piracy sites) found that Anna's Archive had among the most comprehensive full-text coverage, but criticized it for having an unintuitive interface. In March 2025, it averaged over 650,000 daily downloads, roughly 10 times the estimated distribution of the New York Public Library.
+
+
+=== Technology ===
+
+
+==== Infrastructure and DDoS protection ====
+Anna's Archive uses a multi-layered server architecture designed for resilience against takedowns and outages. According to a 2023 blog post by the site's operators, the backend runs on Flask, MariaDB, and Elasticsearch, hosted on inexpensive servers that are proxied through separate providers to shield the actual hosting infrastructure from legal requests. Multiple redundant proxy servers and application servers are maintained so that if any single provider terminates service, the site can continue to operate.
+The site initially used Cloudflare's free tier as an additional caching and DDoS protection layer, taking advantage of Cloudflare's legal position that it acts as a utility rather than a hosting provider and is therefore not directly subject to DMCA takedown requests. However, following court orders associated with the Spotify lawsuit in January 2026, Cloudflare disabled its nameservers for several Anna's Archive domains. At least some of the site's domains subsequently shifted to DDoS-Guard, a Russian DDoS-protection and content delivery provider.
+
+
+==== Domain registration ====
+Anna's Archive has registered domains through a variety of registrars across multiple jurisdictions. Several of its domains, including its .li and .gl domains, have been registered through Njalla, a privacy-focused domain registration service operated by Njalla SRL in Costa Rica, which registers domains in its own name on behalf of customers to shield their identities.
+
+
+==== Account system and download speeds ====
+The site operates a tiered download system. Non-members may download files through shared servers at reduced speeds, subject to browser-based verification intended to prevent automated abuse. A waitlist-based system allows free users to access somewhat faster servers by limiting the number of concurrent downloads. Paid members receive high-speed downloads, with the number of fast downloads permitted per 24-hour period varying by membership tier; multiple memberships can be combined additively. The site also offers high-speed SFTP access to its full collection to organisations – primarily companies training large language models – in exchange for large contributions of money or data.
+
+
+==== Donation and payment infrastructure ====
+Because of its legal status, the site states that it cannot accept payments through conventional banking channels directly. Instead, it relies on cryptocurrency as well as alternative methods such as Amazon gift cards, Cash App and Alipay. The operators have stated that the need to remain anonymous necessitates avoiding traditional payment processors, and that only a small number of companies support virtual debit cards paid for with cryptocurrency.
+
+
+==== Data format ====
+The site's data is standardised under the Anna's Archive Containers (AAC) format, introduced in August 2023 to allow for incremental releases. Each container consists of metadata and optionally associated binary data. Metadata files use line-delimited JSON compressed with Zstandard, while binary data files are stored alongside them in structured directories. The format is designed to be machine-readable, easy to distribute via torrents, and compatible with the site's existing stack of MariaDB, Elasticsearch, and Python.
+
+
+=== Finances ===
+High-speed downloads on Anna's Archive are only available to users with a paid membership, while non-members must use slower options with browser verification to prevent abuse by bots. It describes itself as a nonprofit, claiming that membership fees and donations are mostly spent on server infrastructure and that none are personally used by the site's operators. It awards memberships and monetary "bounties" to some volunteer contributors.
+Anna's Archive offers high-speed access to its full collection via SFTP to groups training large language models (LLMs) in exchange for large contributions of money or data. It said it provided such access to about 30 companies as of January 2025, primarily based in China, including both LLM companies and data brokers. DeepSeek's VL model was partly trained on ebook data from the site. Some lawyers have criticized claims that this constitutes fair use under US copyright law, citing precedent for the importance of market harm.
+
+
+=== Motivation ===
+
+Anna's Archive has said its objectives are to "catalog all the books in existence" and "track humanity's progress toward making all these books easily available in digital form". It has been described as both continuing and greatly extending the ambitions of earlier shadow libraries with its vision of a "universal library" that preserves as many books as possible. It has been interpreted as part of an ascendant "culture of mistrust towards corporations, institutions, governments, and laws... that perhaps began with the financial collapse of 2008 and the Occupy Wall Street movements" which saw the rise of decentralizing technologies.
+Anna has justified their opposition to copyright on ethical grounds, stating that they "believe that preserving and hosting these files is morally right" and that they and other shadow librarians believe that "information wants to be free". They have suggested that copyright law must be reformed as a matter of national security, proposing that Western countries make legal carveouts for text and data mining so as to remain ahead in the AI arms race.
+Anna cites programmer and information activist Aaron Swartz as inspiring the project's collection of metadata. The site recommends Swartz's writings as well as Stephen Witt's How Music Got Free and Michele Boldrin and David K. Levine's Against Intellectual Monopoly, which criticize existing copyright law and have been associated with the copyleft movement.
+
+
+== Site blocks and legal issues ==
+
+
+=== United States ===
+Since 2023, Anna's Archive domains have appeared in the annual Notorious Markets List of the Office of the United States Trade Representative, which highlights digital and physical markets allegedly involved in large-scale intellectual property infringement. These reports describe the site as related to Sci-Hub and LibGen. In response to a request for comment by the Office on its 2023 List, the Association of American Publishers identified Anna's Archive as an infringing site, and analyzed its cryptocurrency wallets to find that it had received over $29,000 in funds as of July 2023.
+
+
+==== OCLC lawsuit ====
+In October 2023, Anna's Archive was reported to have scraped the entirety of WorldCat, the world's largest bibliographic database, and made its proprietary data freely available, which Anna described as "a major milestone in mapping out all the books in the world". OCLC, WorldCat's maintainer, responded by suing the site in an Ohio federal court in January 2024, claiming the scrape was achieved through cyberattacks on its servers. It sought over $5 million in total damages and an injunction to stop Anna's Archive from scraping or sharing its data. OCLC clarified that although its internal systems were not breached, it believes the site's actions legally constitute hacking. The only named defendant denied any involvement with the scrape or Anna's Archive. Technology writer Glyn Moody criticized the suit as "costly and pointless", saying it went against OCLC's stated mission of making information accessible.
+In July 2024, in the wake of the suit, the .org mirror of Anna's Archive was replaced with a new .gs mirror to avoid falling under US jurisdiction; however, soon afterward, the .gs domain was suspended and the mirror reverted to the original .org domain.
+In March 2025, the court deferred judgement on aspects of the case to the Supreme Court of Ohio over concerns about its legal novelty, denying both a motion for default judgement from OCLC and a motion to dismiss from the named defendant. In April, OCLC reached an agreement with the named defendant to drop her from the case, focusing instead on obtaining judgement against the site itself. In November, OCLC dropped the demand for damages, focusing its efforts on obtaining an injunction that would compel third-party intermediaries to stop the sharing of the data.
+In January 2026, federal district judge Michael H. Watson issued a default judgement in favor of OCLC, requiring Anna's Archive to delete the WorldCat data and preventing it from scraping or sharing WorldCat in the future. Anna's Archive was not expected to comply with the ruling; OCLC stated that it "hopes to take the judgment to website hosting services".
+
+
+==== Meta lawsuit ====
+In February 2025, internal emails were unsealed in a lawsuit against Meta in a California court for allegedly training its AI models on copyrighted works which revealed that the company had downloaded over 81 terabytes of data through Anna's Archive torrents, in addition to data previously downloaded from LibGen. The plaintiffs in the case, a group of authors including Richard Kadrey, Sarah Silverman, and Christopher Golden, alleged that CEO Mark Zuckerberg personally authorized the use of shadow libraries. The company had argued that its use of copyrighted data in AI training constituted fair use.
+In June 2025, the court partially ruled in favor of Meta, finding that the training was "highly transformative" and therefore fair use. Vince Chhabria, the judge in the case, emphasized that the ruling did not mean that Meta's actions were in fact legitimate, but said that the plaintiffs failed to develop strong arguments. He identified "market dilution" as a convincing argument for financial harm not pursued by the plaintiffs — the idea that "by training generative AI models with copyrighted works, companies are creating something that often will dramatically undermine the market for those works".
+
+
+==== Spotify lawsuit ====
+In December 2025, Anna's Archive reportedly scraped almost 300 terabytes of data from music streaming service Spotify, publishing 256 million rows of track metadata and stating plans to publish 86 million audio files. While the audio accounted for only 37% of Spotify's full collection, it represented 99.6% of listens on the platform. In response, the company stated that it had "identified and disabled the nefarious user accounts that engaged in unlawful scraping". Some criticized the release's lack of coverage for less streamed songs. The metadata release was compared to the open database MusicBrainz, which contains roughly 5 million tracks, around 37 times smaller. Pro-copyright campaigners predicted that the leaked music would be used to train AI models.
+The same month, Spotify, alongside major record labels including Universal Music Group, Sony Music, and Warner Music, filed a lawsuit against the unknown operators of Anna's Archive in the United States District Court for the Southern District of New York. The complaint alleged mass copyright infringement, breach of contract, DMCA violations, and violations of the Computer Fraud and Abuse Act, accusing the site of circumventing Spotify's digital rights management systems. The lawsuit was initially filed under seal "so that Anna's Archive cannot pre-emptively frustrate" countermeasures they seek.
+In January 2026, the court granted a temporary restraining order, followed by a preliminary injunction issued on January 16 by US District Court Judge Jed Rakoff. The injunction ordered Anna's Archive to cease hosting, linking to, or distributing the copyrighted works, and also targeted third-party intermediaries including domain registries, hosting companies, and Cloudflare. As a result, several Anna's Archive domain names were suspended, including the .org domain overseen by the Public Interest Registry and the .se domain. Anna's Archive initially believed that the suspension was unrelated to their activities. Following the reveal of the legal action, the site removed its dedicated Spotify download section, marking it as "unavailable until further notice." On April 15, 2026, the court entered a default judgment ordering Anna's Archive to pay $322 million and granted a permanent injunction ordering service providers, notably including domain registrars, to stop providing services to the site.
+
+
+==== Nvidia lawsuit ====
+In response to a March 2024 lawsuit accusing Nvidia of training LLMs on data from a shadow library the company disputed the characterization of Anna's Archive and other repositories as "shadow libraries", despite Anna's own use of the term. In January 2026, additional evidence was presented in the case suggesting that Nvidia also directly contacted Anna's Archive in order to gain high-speed access to its data. Anna's Archive denied ever dealing with Nvidia directly, and raised the possibility that Nvidia used an intermediary party to avoid legal issues. On January 29, 2026, Nvidia filed a motion to dismiss the lawsuit. According to TorrentFreak, the company described the plaintiffs' allegations as 'speculative, vague, and legally insufficient.'
+
+
+=== Italy ===
+In January 2024, Italy's national communications agency ordered major internet service providers (ISPs) in the country to block Anna's Archive due to a copyright complaint by the Italian Publishers Association. An investigation by the Digital Services Directorate confirmed the presence of copyrighted works on the site and found that some of its servers were likely owned by a Ukrainian hosting provider, but failed to uncover the identity of its operators.
+
+
+=== Netherlands ===
+In March 2024, the Rotterdam District Court ordered major ISPs in the Netherlands to block Anna's Archive and LibGen due to a request by advocacy group BREIN. The order was "dynamic", meaning that if the blocked sites changed domains or IP addresses in the future, ISPs would be obligated to update their blocks.
+
+
+=== United Kingdom ===
+In December 2024, the UK Publishers Association won an order from the High Court of Justice requiring major ISPs to block Anna's Archive and other copyright-infringing sites, extending a list of sites blocked since 2015 under section 97A of the Copyright, Designs and Patents Act. The Association said it identified over one million records of copyrighted books and journal articles on Anna's Archive domains.
+
+
+=== Belgium ===
+In July 2025, a group of organizations representing Belgian authors and copyright holders – including the Association of Belgian Publishers (ADEB), the Civil Society of Multimedia Authors (La Scam), the Cooperative for the Perception and Compensation of Belgian Publishers (Copiebel), Librius, the Educational and Scientific Publishers Group (GEWU), the General Publishers Ground (GAU), and the Flemish Authors' Association (VAV) – successfully petititoned the Commercial Court to issue judgement against five alleged piracy sites: Anna's Archive, LibGen, Sci-Hub, Z-Library, and OceanofPDF. The judge ordered FPS Economy's anti-piracy service to block the sites in the interim. In the event of noncompliance, the sites face fines of up to 500,000 euros.
+
+
+=== Germany ===
+On October 11, 2025, TorrentFreak reported that major ISPs in Germany had blocked access to the main domains of Anna's Archive. The blockade was initiated by the Clearing Body for Copyright on the Internet (CUII), a coalition of rightsholders and ISPs that coordinates voluntary site blocking measures.
+
+
+=== Other issues ===
+Anna's Archive was among Google Search's ten most reported domains for DMCA takedown by June 2024. By November 2025, Google had removed 749 million Anna's Archive URLs from its search results, representing 5 percent of all takedown requests sent to the search engine since 2012. These requests came from over 1,000 authors and publishers. It has been one of the most targeted sites of Dutch anti-piracy service Link-Busters, which sends takedown requests to Google and other search engines on behalf of major publishers.
+In January 2025, the messaging app Telegram suspended the Anna's Archive channel for copyright infringement, despite the operators reportedly taking precautions to avoid infringing posts on the app. Z-Library's Telegram channel was suspended the same week, and neither was alerted of the action. The removals were speculated to be linked to legal action by the Delhi High Court.
+
+
+== See also ==
+
+Digital preservation
+Freedom of information
+
+
+== Notes ==
+
+
+== References ==
+
+
+=== Primary sources ===
+
+
+== External links ==
+
+Official website 
+Official blog
+PiLiMi team website (archived 2023) (the live link redirects to Datasets - Anna's Archive)

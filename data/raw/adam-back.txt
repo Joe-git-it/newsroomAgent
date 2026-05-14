@@ -1,0 +1,32 @@
+Adam Back (born July 1970) is a British cryptographer and cypherpunk. He is the CEO of Blockstream, which he co-founded in 2014. He invented Hashcash, which is used in the bitcoin mining process. An investigation by the The New York Times suggested that he may be Satoshi Nakamoto, the pseudonymous inventor of bitcoin, though Back has denied this claim.
+
+
+== Life ==
+Back was born in London, England, in July 1970. His first computer was a Sinclair ZX81. He taught himself BASIC, and spent his time reverse engineering video games, finding decryption keys in software packages. He completed his A levels in advanced mathematics, physics, and economics.
+He has a computer science PhD in distributed systems from the University of Exeter. During his PhD, Back worked with compilers to make use of parallel computers in a semi automated way. He became interested in PGP encryption, electronic cash and remailers. He spent two thirds of his time working with encryption. After graduation, Back spent his career as a consultant in startups and larger companies in applied cryptography, writing cryptographic libraries, designing, reviewing and breaking other people's cryptographic protocols.
+
+
+== Cryptography software ==
+
+Back is a pioneer of early digital asset research similar to Wei Dai, David Chaum, and Hal Finney. In 1997, Back invented Hashcash. A similar system is used in Bitcoin.
+He also implemented credlib, a library that implements the credential systems of Stefan Brands and David Chaum.
+He was the first to describe the "non-interactive forward secrecy" security property for email and to observe that any identity-based encryption scheme can be used to provide non-interactive forward secrecy.
+He is also known for promoting the use of ultra-compact code with his 2-line and 3-line RSA in Perl signature block and non-exportable T-shirts to protest cryptography export regulations.
+Back has promoted the use of satellites and mesh networks to broadcast and receive bitcoin transactions, as a backup for the traditional internet.
+
+
+=== Relationship to Satoshi Nakamoto ===
+Back was one of the first two people to receive an email from Satoshi Nakamoto, the pseudonymous inventor of bitcoin. In 2016, the Financial Times cited Back as a potential Nakamoto candidate, along with Nick Szabo and Hal Finney. Craig Wright had sued Back for stating that Wright was not Nakamoto, with Wright subsequently dropping the suit. In 2020, the YouTube channel Barely Sociable claimed that Back is Nakamoto. Back subsequently denied this.
+The 2024 HBO documentary Money Electric: The Bitcoin Mystery, directed by Cullen Hoback, examined Back as its principal Satoshi Nakamoto suspect, with Hoback stating that "the evidence pointing in Adam's direction was a lot harder to poke holes in." The film noted that Back is the only person named in the body of the Bitcoin white paper, and that Back's writing style resembles Nakamoto's. Hoback also highlighted Back's move to Malta, his edits to Wikipedia's Bitcoin article that restored its Nakamoto section and listed other suspects but not himself, and his joining the Bitcoin forum on April 17, 2013, the same day the size of Nakamoto's holdings first became public. In an on-camera interview for the documentary, after Hoback listed him among the suspects, Back replied: "I thought you might think I'm Satoshi. And I don't want that to be on the record, really." The film argued that both Back and the developer Peter Todd had been involved in the creation of Bitcoin, and characterized Blockstream, the company Back co-founded in 2014, as possible "corporate Satoshi".
+In 2026, an investigation by John Carreyrou in The New York Times asserted that Back is Nakamoto, citing his use of certain less common phrases, shared niche interests, and the timing of Nakamoto’s final known communication and Back’s first public comment on Bitcoin, among other things. Back once again denied the allegation. Carreyrou concluded the article by demonstrating that while Back denied being Satoshi, he was unable to adequately explain a substantial amount of circumstantial evidence beyond categorical denial, and refused to provide the metadata attached to the e-mails he exchanged with Nakamoto. During an in-person interview, Back's body language at times appeared to contradict his denials, with his face reddening as he shifted uncomfortably when confronted with specific points. In one notable exchange, when Carreyrou raised a Satoshi quote stating "I'm better with code than with words," Back interrupted and responded as though speaking for himself, a slip that Carreyrou interpreted as Back accidentally responding as Satoshi.
+
+
+== Business career ==
+On 3 October 2016, Back was appointed as CEO of Blockstream.
+
+
+== References ==
+
+
+== External links ==
+Official website

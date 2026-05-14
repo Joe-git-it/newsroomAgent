@@ -44,7 +44,7 @@ def build_vectorstore(chunks: list, persist_dir: Path) -> Chroma:
     )
 
 # TO BE RAN ONCE PER CHUNK SIZE FROM CMD LINE. RERUN WHEN SOURCE DATA OR OVERLAP CHANGES
-def ingest(chunk_size: int, chunk_overlap: int = 100):
+def ingest(chunk_size: int = CHUNK_SIZE, chunk_overlap: int = CHUNK_OVERLAP):
     # persist = persist_dir_for(chunk_size)
     if PERSIST_DIR.exists():
         shutil.rmtree(PERSIST_DIR)  # WIPE BEFORE REBUILD. AVOID ADDITIVE DUPLICATES

@@ -23,6 +23,7 @@ data/chroma/
 
 # Ignore RAG article scraper
 experiments/rag/fetch_articles.py
+scripts/fetch_articles.py
 *.log
 
 # Ignore chrome db
